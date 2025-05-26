@@ -27,4 +27,10 @@ squares.forEach(square => {
 
  generateBoard(16);
 
-
+function watchColorPicker(event) {
+  document.querySelectorAll(".square").forEach((square) => {
+        square.addEventListener('mouseover', () => {
+            square.style.backgroundColor = event.target.value;
+        })
+    })
+}
