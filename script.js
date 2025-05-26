@@ -34,3 +34,13 @@ function watchColorPicker(event) {
         })
     })
 }
+
+function chooseGridSize() {
+ const selectedSize = prompt("Choose board size between 16-100: ");
+    if(selectedSize >= 16 && selectedSize <= 100) {
+        generateBoard(selectedSize)
+    } else  {
+        alert("Please choose value between 16 and 100!");
+        chooseGridSize()
+    }
+}
