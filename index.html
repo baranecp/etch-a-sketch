@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch a Sketch</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Etch-a-Sketch</h1>
     <div class="container"></div>
     <div class="flex">
-        <button onclick="chooseGridSize()" class="btn">Grid Size</button>
-        <input type="color" class="input-color" onclick="watchColorPicker(event)">
+      <button onclick="chooseGridSize()" class="btn">Grid Size</button>
+      <input
+        type="color"
+        class="input-color"
+        onclick="watchColorPicker(event)" />
+      <button id="eraserBtn">Eraser</button>
+      <button id="colorBtn">Color</button>
+      <button id="resetBtn">Reset</button>
     </div>
-</body>
+  </body>
 </html>
